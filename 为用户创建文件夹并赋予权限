@@ -1,0 +1,6 @@
+### 为用户在一块盘上创建文件夹
+假设用户名是aaa, 要在data下创建名为aaa的文件夹
+cd /data
+mkdir aaa
+sudo chown -R aaa ./aaa   # 改变文件夹所属的用户
+sudo chmod -R 740 ./aaa   # 改变文件夹读写权限，xxx: 分别代表文件夹所属用户权限，用户组的权限，其他用户的权限。 r: 可读（4）, w: 可写（2）, x: 可执行（1）.
